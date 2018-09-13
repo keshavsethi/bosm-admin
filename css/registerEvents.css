@@ -67,6 +67,7 @@
     
 
 }
+<<<<<<< HEAD
 /*Code changed here*/
 .container h2{
     text-align:center;
@@ -76,27 +77,31 @@
 .sidenav {
     height: 100%;
     width: 0;
-    position: fixed;
-    z-index: 10;
     top: 0;
+    z-index: 1;
+    top: 12vh;
     left: 0;
     background-color: #111;
+    background-color:#6495ed;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    clip-path:polygon(0 0 ,100% 0,50% 100%, 0 100%);
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 8px 0px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: 20px;
+    color: black ;
     display: block;
     transition: 0.3s;
+
 }
 
 .sidenav a:hover {
     color: #f1f1f1;
+    font-size:25px;
 }
 
 .sidenav .closebtn {
@@ -111,6 +116,7 @@
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
 #gender, .team , #others
 {
     display: none;
