@@ -74,17 +74,14 @@
     color: cornflowerblue;
     
 }
-=======
-
-
->>>>>>> 67968eda1e9d9ea5bb88976d918f0e1e18228ce2
 .sidenav {
     height: 100%;
     width: 0;
-    position: absolute;
+    top: 0;
     z-index: 1;
     top: 12vh;
     left: 0;
+    background-color: #111;
     background-color:#6495ed;
     overflow-x: hidden;
     transition: 0.5s;
