@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BOSM App admin control Panel</title>
+    <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/registerCollege.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <div class="header">
+        <img src="images/bosm.png">
+        <h1>BOSM Admin Panel</h1>
+        <button onclick="mainApp.logOut()">Log Out</button>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+            <a href="/" class="home">Home</a>
+            <a href="/registerEvents" class="register-events">Register Events</a>
+            <a href="/uploadResults" class="upload-results">Upload Results</a>
+            <a href="/updateEvent" class="update-event">Update Event</a>
+            <a href="/updateResult" class="update-result">Update Result</a>
+            <a href="/addEvents" class="add-events">Add Events</a>
+            <a href="/notifications" class="display-message">Display Message</a>
+            <a href="/registerCollege" class="register-college">Register College</a>
+            <a href="/registerVenue" class="register-venue">Register Venue</a>
+            <a href="#" class="delete-event">Delete Event</a>
+          </div>
+          <div class="container" id="notificationsPage" style="width: 70vw;">
+                <h2>Add Events</h2>
+                <form>
+                  <div class="form-group" id="titleElement">
+                    <label for="title">Name of the event:</label><br>
+                    <input type="text" name="title" id="title" class="form-control">
+                  </div>
+                  <div class="form-group" id="descrip">
+                    <label for="message">Event Description:</label><br>
+                    <textarea name="message" rows="5" id="description" class="form-control" autocomplete="off">
+                    </textarea>
+                  </div>
+                  <div class="form-group" id="club_name">
+                        <label for="club_name">Club:</label><br>
+                        <input type="text" name="club" id="club" class="form-control">
+                    </div>
+                  <div class="form-group" id="date_of_event">
+                                <label for="date_of_event">Date of Event:</label>
+                                <select class="form-control" id="date" value="">
+                                    <option value="21">21st September</option>
+                                    <option value="22">22nd September</option>
+                                    <option value="23">23rd September</option>
+                                    <option value="24">24th September</option>
+                                </select>
+                    </div>
+                    <div class="form-group" id="timing">
+                        <label for="time">Time:</label><br>
+                        <input type="time" name="time" id="time" class="form-control">
+                    </div> 
+                    <div class="form-group" id="venue">
+                        <label for="venue">Venue:</label><br>
+                        <input type="text" name="venue" id="venueOptions" class="form-control">
+                    </div>                  
+                </form>
+                <button class="btn btn-default" onclick="addEvent()" id="abcd">Submit</button>
+
+   
+
+    <script type="text/javascript" src="./js/fireBase.js"></script>
+    <script type="text/javascript" src="./js/addEvents.js"></script>
+
+    <script type="text/javascript">
+        console.log(firebase);
+    </script>
+
+</body>
+</html>

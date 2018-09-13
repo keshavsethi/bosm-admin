@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/notifications.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</head>
+<!-- <script type="text/javascript">
+    $(document).ready(function () {
+        toggleFields();
+        $("#sport").change(function () {
+            toggleFields();
+        });
+        $("#description").change(function () {
+            toggleFields();
+        });
+    });
+</script> -->
+<body>
+    <div class="header">
+        <img src="images/bosm.png">
+        <h1>BOSM Admin Panel</h1>
+        <button onclick="mainApp.logOut()">Log Out</button>
+    </div>
+
+    
+    <div id="mySidenav" class="sidenav">
+            <a href="/" class="home">Home</a>
+            <a href="/registerEvents" class="register-events">Register Events</a>
+            <a href="/uploadResults" class="upload-results">Upload Results</a>
+            <a href="/updateEvent" class="update-event">Update Event</a>
+            <a href="/updateResult" class="update-result">Update Result</a>
+            <a href="/addEvents" class="add-events">Add Events</a>
+            <a href="/notifications" class="display-message">Display Message</a>
+            <a href="/registerCollege" class="register-college">Register College</a>
+            <a href="/registerVenue" class="register-venue">Register Venue</a>
+            <a href="#" class="delete-event">Delete Event</a>
+          </div>
+
+    <div class="container" id="notificationsPage" style="width: 70vw;">
+        <h2>Notifications</h2>
+        <form>
+          <div class="form-group" id="titleElement">
+            <label for="title">Title:</label><br>
+            <input type="text" name="title" id="title" class="form-control">
+          </div>
+          <div class="form-group" id="messageBodyElement">
+            <label for="message">MessageBody:</label><br>
+            <textarea name="message" rows="5" id="message" class="form-control" autocomplete="off">
+            </textarea>
+          </div>
+          <div class="form-group" id="notificationsType">
+                <label for="Notification">Notification type:</label><br>
+                <label class="radio-inline">
+                    <input type="radio" class="type_me" value="Match Type" id="matchType" name="optradiotype">Match type
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" class="type_me" value="Event Type" id= "eventType" name="optradiotype">Event type
+                </label>
+          </div>
+        </form>
+        <button class="btn btn-default" onclick="sendNotification()" id="abcd">Submit</button>
+  </div>
+  <script type="text/javascript" src="./js/fireBase.js"></script>
+  <script type="text/javascript" src="../js/index.js"></script>
+  <script src="/public/js/jquery.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-auth.js"></script>
+  <!-- <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-firestore.js"></script> -->
+  <script type="text/javascript" src="./js/notifications.js"></script>
