@@ -42,21 +42,36 @@
     box-shadow: 2px 2px 2px grey;
 }
 
-.container
+
+
+.container 
 {
     position: absolute;
-    left: 20vw;
+    left: 23vw;
     margin-top:
   background-color: #ffffff;
   background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%232d84ff' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    width: 500px;
-    height: 550px;
+/*   code changed here*/
+
+    width: 20vw;
+    height: 78vh;
     padding: 10px;
-    border: 5px solid black;
+    border: 1px inset skyblue;
+    border-top-color: skyblue;
+    border-left-color: skyblue;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+
     box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+    margin: 20px 0px 0px 0px;
+    
 
-    margin: 20px 0px 0px 460px;
-
+}
+/*Code changed here*/
+.container h2{
+    text-align:center;
+    color: cornflowerblue;
+    
 }
 .sidenav {
     height: 100%;
