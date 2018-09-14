@@ -8,22 +8,28 @@
 .header
 {
     width: 100vw;
-    height: 12vh;
-    background: #eee;
+    height: 12vh;background-color: cornflowerblue;
+    opacity:0.5;
+    
+
     
 }
 
 .header > img
 {
-    width: 5.7vw;
+    width: 8vw;
+    left:50%;
+    position: relative;
+
 }
 
 .header > h1
 {
     position: absolute;
-    top: 1vh;
-    left: 7vw;
+    top: -1vh;
+    left: 40vw;
     font-size: 25px;
+    color :black;
 }
 
 .header > button
@@ -31,15 +37,21 @@
     position: absolute;
     left: 90vw;
     top: 3vh;
-    width: 6vw;
-    height: 5vh;
+    width:70px;
+    height: 30px;
     border: none;
     outline: none;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
-    background: rgb(51,51,51);
+    background: black ;
     color: white;
     box-shadow: 2px 2px 2px grey;
+}
+.header button:hover{
+	background: white ;
+	color :black;
+	transition: 0.5s
+
 }
 
 
@@ -47,15 +59,14 @@
 .container 
 {
     position: absolute;
-    left: 23vw;
-    margin-top:
-  background-color: #ffffff;
-  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%232d84ff' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-/*   code changed here*/
-
+    left: 15vw;
+    
+  background-image: url("images/kkk.svg");
+  background-color: white;
     width: 20vw;
-    height: 78vh;
+    height: 80vh;
     padding: 10px;
+    z-index: 2;
     border: 1px inset skyblue;
     border-top-color: skyblue;
     border-left-color: skyblue;
@@ -73,39 +84,48 @@
     color: cornflowerblue;
     
 }
+
 .sidenav {
-    height: 100%;
+    height: 88vh;
     width: 0;
-    position: fixed;
-    z-index: 10;
-    top: 0;
+    position: absolute;
+    z-index: 1;
+    top: 12vh;
     left: 0;
-    background-color: #111;
+    opacity: 0.5;
+    background-color:cornflowerblue;
     overflow-x: hidden;
     transition: 0.5s;
+    z-index:4;
     padding-top: 60px;
+    clip-path: polygon(0 0, 100% 0,50% 100% , 0 100%);
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 8px 2px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: 22px;
+    color: black;
+    font-family: roboto;
     display: block;
-    transition: 0.3s;
+    transition: 0.4s;
+    o
 }
 
 .sidenav a:hover {
     color: #f1f1f1;
+     font-size: 26px;
+     text-underline-position: under;
 }
 
 .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
-    font-size: 36px;
+    right: 22px;
+    font-size: 30px;
     margin-left: 50px;
 }
+
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
@@ -114,4 +134,17 @@
 #gender, .team , #others
 {
     display: none;
+}
+
+label{
+	color:cornflowerblue;
+	text-transform: uppercase;
+	padding-bottom: 1%;
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+       background-color: green;
+       color:white;
+    }
 }

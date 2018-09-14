@@ -23,15 +23,18 @@
         });
     });
 </script> -->
-<body>
-    <div class="header">
-        <img src="./images/bosm.png">
+<body style="background:url(images/kk2.svg); ">
 
+    <div class="header">
+        
+<span style="font-size:30px;cursor:pointer" onclick="openNav()"><h3 style="color:black;">DASHBOARD&#9776;</h3></span>
+<h1 class="res"> BOSM ADMIN PANEL</h1>
         <button onclick="mainApp.logOut()">Log Out</button>
     </div>
 
+ <div id="mySidenav" class="sidenav">
 
-    <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="/" class="home">Home</a>
             <a href="/registerEvents" class="register-events">Register Events</a>
             <a href="/uploadResults" class="upload-results">Upload Results</a>
@@ -43,10 +46,11 @@
             <a href="/registerVenue" class="register-venue">Register Venue</a>
             <a href="#" class="delete-event">Delete Event</a>
           </div>
-
-
+        <div class=sidenav ></div>
+ 
     <div class="container" id="registerEventsPage" style="width: 70vw;">
         <h2>Register Event</h2>
+        <img src="./images/bosm.png" style="position:absolute;width:40vw; height:65vh; padding:5vw;  left:15vw; opacity:0.3;">
         <h3 id="ejsVar" style="display:none;"><%= timestamp %></h3>
         <form>
             <div class="form-group" id="descip">
@@ -188,5 +192,6 @@
         }
 
     </script>
+    <script type="text/javascript" src="js/all.js"></script>>
 </body>
 </html>
